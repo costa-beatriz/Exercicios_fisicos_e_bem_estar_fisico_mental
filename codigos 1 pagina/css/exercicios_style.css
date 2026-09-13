@@ -14,7 +14,9 @@ font-family: "Oswald", sans-serif;
 
 /* ==== FORMATAÇÃO GERAL === */
 html {
+  text-align: center;
     font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
+
 }
 
 html {
@@ -64,14 +66,18 @@ body {
 /* ================================= */
 
 
-
 header img {
-    width: 25%;
+    width: 20%;
+    padding-bottom: 0.5vw;
 }
 
 header nav ul {
-    font-size: 1rem;
+    font-size: 4vw;
     padding: 5px 0 5px 0;
+}
+
+header nav ul li{
+  padding: 0.8vw;
 }
 
 header nav ul li a {
@@ -86,7 +92,7 @@ header nav ul li a.ativo {
 }
 
 header {
-    padding: 3vw 5vw;
+    padding: 4vw 5vw;
     border-bottom: 1px solid #cccccc;
 }
 
@@ -104,11 +110,117 @@ main {
   padding: 1.5rem;
 }
 
+/* === section banner mobile === */
+
+  .banner {
+    padding: 4vw;
+    position: relative;
+  }
+
+  .banner img {
+    max-width: 85vw;
+    display: block;
+    margin-bottom: 2vw;
+  }
+
+  .banner h1 {
+    font-size: 4.3vw;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    color: rgb(0, 0, 0);
+  }
+
+  .banner span {
+    font-weight: 700;
+  }
+
+  /* === section por que mobile === */
+
+   .porque {
+    text-align: center;
+    padding: 5vw;
+    margin-bottom: 2vw;
+  }
+
+  .porque h2{
+    font-size: 6.3vw;
+    padding-bottom: 2vw;
+  }
+
+  .porque h2 span{
+    font-weight: 700;
+  }
+
+  .porque .texto p{
+    font-size: 3.5vw;
+    }
+  
+  .porque .img {
+    align-items: center;
+    padding: 3vw;
+  }
+
+  /* === section como começar mobile === */
+
+  .comecar {
+    padding: 4vw 2vw;
+    background-color: #dbe4ee;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .comecar h2 {
+    font-size: 6.3vw;
+    margin-bottom: 5px;
+    padding-bottom: 1vw;
+  }
+
+  .comecar p {
+    display: inline-block;
+    font-size: 3.3vw;
+    color: #333333;
+  }
+
+  .comecar .quebra-linha{
+    display: none;
+  }
+
+  .comecar ul {
+    align-items: center;padding: 2vw;
+  }
+  .comecar ul li{
+    background-color: white;
+    padding: 10px 2px;
+    margin: 5vw;
+    border-radius: 2vw;
+  }
+
+  .comecar ul li p{
+    font-size: 3vw;
+    margin: 1vw 1vw;
+  }
+
+  .comecar ul li img{
+    max-width: 70%;
+  }
+  
+
+
+
+
+  
+
+
+
+
+
+
 
 
 
 /* ================================= */
-/*        FOODER DO CELULAR         */
+/*        FOOTER DO CELULAR         */
 /* ================================= */
 
 @media screen and (max-width: 599px) {
@@ -207,6 +319,8 @@ main {
 padding: 0 0 1rem 0;
   
 }
+
+
 
 
 
@@ -393,6 +507,10 @@ padding: 0 0 1rem 0;
     margin: 2vw 2.5vw;
   }
 
+  .comecar .quebra-linha{
+    display: block;
+  }
+
   .comecar ul {
     width: 90%;
     list-style: none;
@@ -560,3 +678,4 @@ padding: 0 0 1rem 0;
         width: 30px;
     }
 }
+
