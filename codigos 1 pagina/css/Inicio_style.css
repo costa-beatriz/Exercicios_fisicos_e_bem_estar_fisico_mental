@@ -65,9 +65,7 @@ body {
 
 
 
-header img {
-    width: 25%;
-}
+
 
 header nav ul {
     font-size: 1rem;
@@ -95,9 +93,7 @@ header {
     width: 10%;
 }
 
-.avatar img {
-    width: 10%;
-}
+
 
 .comeco {
     padding: 10px;
@@ -378,66 +374,52 @@ section.recursos {
 
     /* ===== header ===== */
     header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 3vw 5vw 3vw 5vw;
-        border-bottom: 1px solid #cccccc;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw 5vw 3vw 5vw;
+  border-bottom: 1px solid #cccccc;
+}
 
-    img.logo-circle {
-        width: 50%;
-    }
+.logo-circle {
+  width: 3.5rem;
+  border-radius: 50%;
+}
 
-    img.logo-circle-fim {
-        width: 3.5rem;
-        border-radius: 50%;
-        background-color: var(--azul);
-    }
+header nav ul {
+  display: flex;
+  gap: 2vw;
+  font-size: 0.9rem;
+}
 
-    header nav ul {
-        display: flex;
-        gap: 2vw;
-        font-size: 0.9rem;
-    }
+header nav ul li a {
+  color: var(--texto-principal);
+  font-weight: 500;
+}
 
-    header nav ul li a {
-        color: var(--texto-principal);
-        font-weight: 500;
-    }
+header nav ul li a.ativo {
+  color: #4988C4;
+  font-weight: 700;
+}
 
-    header nav ul li a.ativo {
-        color: #4988C4;
-        font-weight: 700;
-    }
+.header-icones {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 3vw 5vw;
-        border-bottom: 1px solid #cccccc;
-    }
+.sino img {
+  width: 27px;
+  height: auto;
+}
 
-    .header-icones {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .sino img {
-        width: 1.8rem;
-        height: auto;
-    }
-
-    .header-icones .avatar {
-        width: 1.8rem;
-        height: 1.8rem;
-        border-radius: 50%;
-        background-color: #d9d9d9;
-        display: inline-block;
-    }
-
+.header-icones .avatar {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  display: inline-block;
+}
     main section.comeco {
         display: flex;
         background-color: #E6E5E5;
@@ -621,73 +603,61 @@ section.recursos {
         padding-bottom: 3vw;
     }
 
-    footer {
-        background-color: #1c4d8d;
-        color: #ffffff;
-        padding: 2rem 5%;
-        margin-top: 3rem;
-    }
+footer {
+  background-color: #1C4D8D;
+  color: #ffffff;
+  padding: 2rem 5%;
+  margin-top: 3.5rem;
+}
 
-    .footer-container {
-        max-width: 900px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
 
-    .logo-circle-footer {
-        width: 60px;
-        height: 60px;
-        background-color: #ffffff;
-        border-radius: 50%;
-        text-align: center;
-    }
+.footer-container .logo-circle {
+  width: 120px;
+  height: auto;
+  border-radius: 0%;
+}
 
-    .logo-circle-footer img {
-        width: 40px;
-        margin-top: 10px;
-    }
+.footer-container .logo-circle img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-    .footer-links {
-        display: flex;
-        gap: 1rem;
-    }
 
-    .footer-links a {
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 0.85rem;
-    }
+.footer-links {
+  display: flex;
+  gap: 1rem;
+}
 
-    .footer-copy p {
-        margin: 0;
-        font-size: 0.75rem;
-        opacity: 0.8;
-        font-weight: 700;
-    }
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
 
-    .footer-redes {
-        display: flex;
-        gap: 0.8rem;
-    }
+.footer-copy p {
+  margin: 0;
+  font-size: 0.75rem;
+  opacity: 0.8;
+  font-weight: 700;
+}
 
-    .footer-redes img {
-        width: 20px;
-        height: 40px;
-    }
+.footer-redes {
+  display: flex;
+  gap: 0.8rem;
+}
 
-    footer div.logo-circle img {
-        max-width: 40px;
-    }
+.footer-redes img {
+  width: 20px;
 
-    section.beneficios div.imagem img {
-        display: block;
-    }
-
-        span.avatar img{
-        width: 30px;
-    }
+}
 }
