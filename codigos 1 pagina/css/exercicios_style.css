@@ -68,37 +68,40 @@ body {
 
 
 
-header nav ul {
-  font-size: 4vw;
-  padding: 5px 0 5px 0;
+header {
+    padding: 3vw 5vw;
+    border-bottom: 1px solid #cccccc;
 }
 
-header nav ul li {
-  padding: 0.8vw;
+    header div.logo-circle img {
+        width: 20%;
+    
+
+    }
+
+header nav ul {
+    font-size: 1rem;
+    padding: 5px 0 5px 0;
 }
 
 header nav ul li a {
-  color: var(--texto-principal);
-  font-weight: 600;
+    color: var(--texto-principal);
+    font-weight: 600;
 }
 
 header nav ul li a.ativo {
-  color: #4988C4;
-  font-weight: 800;
+    color: #4988C4;
+    font-weight: 800;
 
 }
-
-header {
-  padding: 4vw 5vw;
-  border-bottom: 1px solid #cccccc;
-}
-
 
 .sino img {
-  width: 10%;
+    width: 10%;
 }
 
-
+.avatar img {
+    width: 10%;
+}
 
 main {
   max-width: 1300px;

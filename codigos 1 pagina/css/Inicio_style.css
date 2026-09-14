@@ -66,6 +66,16 @@ body {
 
 
 
+header {
+    padding: 3vw 5vw;
+    border-bottom: 1px solid #cccccc;
+}
+
+    header div.logo-circle img {
+        width: 20%;
+    
+
+    }
 
 header nav ul {
     font-size: 1rem;
@@ -83,22 +93,13 @@ header nav ul li a.ativo {
 
 }
 
-header {
-    padding: 3vw 5vw;
-    border-bottom: 1px solid #cccccc;
-}
-
-
 .sino img {
     width: 10%;
 }
 
-
-
-.comeco {
-    padding: 10px;
+.avatar img {
+    width: 10%;
 }
-
 main section.comeco {
 
     background-color: #E6E5E5;

@@ -71,17 +71,20 @@ h6 {
 /* =========================================================
    HEADER - CELULAR
 ========================================================= */
-
 header {
     padding: 3vw 5vw;
     border-bottom: 1px solid #cccccc;
 }
 
+    header div.logo-circle img {
+        width: 20%;
+    
 
+    }
 
 header nav ul {
     font-size: 1rem;
-    padding: 5px 0;
+    padding: 5px 0 5px 0;
 }
 
 header nav ul li a {
@@ -92,6 +95,7 @@ header nav ul li a {
 header nav ul li a.ativo {
     color: #4988C4;
     font-weight: 800;
+
 }
 
 .sino img {
@@ -101,8 +105,6 @@ header nav ul li a.ativo {
 .avatar img {
     width: 10%;
 }
-
-
 /* =========================================================
    BANNER - CELULAR
 ========================================================= */

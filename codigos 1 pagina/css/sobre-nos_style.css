@@ -52,9 +52,11 @@ header {
     border-bottom: 1px solid #cccccc;
 }
 
-header img {
-    width: 25%;
-}
+    header div.logo-circle img {
+        width: 20%;
+    
+
+    }
 
 header nav ul {
     font-size: 1rem;
@@ -79,105 +81,159 @@ header nav ul li a.ativo {
 .avatar img {
     width: 10%;
 }
-div.frasedaimagem img{
-   display: none;
-}
 div.frese{
+    display: none;
+}
+
+div.frasedaimagem img {
+    display: none;
+}
+
+div.frese {
     padding: 10px;
     font-size: 30px;
     font-weight: 800;
 }
-section.missao h2{
-     padding: 10px;
+
+section.missao h2 {
+    padding: 10px;
     font-size: 25px;
     font-weight: 700;
 }
-div.nossamissao{
+
+div.nossamissao {
     padding: 10px 17px;
     font-size: 20px;
     font-weight: 600;
 }
-div.tres{
+
+div.tres {
     width: 30%;
     display: flex;
     gap: 10px;
-    margin:10px;
+    margin: 10px;
 }
-div.mais{
+
+div.mais {
     width: 30%;
     display: flex;
     gap: 10px;
-    margin:10px;
+    margin: 10px;
 }
-div.dividir h2{
+
+div.dividir h2 {
     padding: 10px;
     font-size: 50px;
     font-weight: 800;
 }
-div.dividir p.Acreditamos{
+
+div.dividir p.Acreditamos {
     padding: 10px;
     font-size: 20px;
     font-weight: 600;
 }
 
+  /*  ==================== */
+    /*      MENU DO DESKTOP  */
+    /*  ==================== */
+
+    .comandos {
+        display: flex;
+        align-items: center;
+        gap: 110px;
+    }
+
+
+    .comandos .inicial a {
+        color: rgb(73, 136, 196);
+        font-weight: bold;
+    }
+
+    /*  ==================== */
+    /*      BODY DO DESKTOP  */
+    /*  ==================== */
+
+
+    .frasedaimagem img {
+        padding: 1vw 15vw 5vw 5vw;
+    }
+
+    .frasedaimagem {
+        position: relative;
+        /* Isso cria o "limite" para o texto não sair da imagem */
+        display: inline-block;
+        width: 100%;/
+    }
+
+
+    .frese {
+        position: absolute;
+        top: 32%;
+        left: 13%;
+        color: white;
+        font-size: 59px;
+        padding: 1vw 30vw 1vw 1vw;
+    }
+
+
 /* === FOOTER == */
 
 footer {
-  background-color: #1C4D8D;
-  color: #ffffff;
-  padding: 2rem 5%;
-  margin-top: 3.5rem;
+    background-color: #1C4D8D;
+    color: #ffffff;
+    padding: 2rem 5%;
+    margin-top: 3.5rem;
 }
 
 .footer-container {
-  max-width: 900px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .footer-container .logo-circle {
-  width: 120px;
-  height: auto;
-  border-radius: 0%;
+    width: 120px;
+    height: auto;
+    border-radius: 0%;
 }
 
 .footer-container .logo-circle img {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 
 .footer-links {
-  display: flex;
-  gap: 1rem;
+    display: flex;
+    gap: 1rem;
 }
 
 .footer-links a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 0.85rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
 }
 
 .footer-copy p {
-  margin: 0;
-  font-size: 0.75rem;
-  opacity: 0.8;
-  font-weight: 700;
+    margin: 0;
+    font-size: 0.75rem;
+    opacity: 0.8;
+    font-weight: 700;
 }
 
 .footer-redes {
-  display: flex;
-  gap: 0.8rem;
+    display: flex;
+    gap: 0.8rem;
 }
 
 .footer-redes img {
-  width: 20px;
-  height: 20px;
+    width: 20px;
+    height: 20px;
 }
 
 /* MEDIA QUERY - DESKTOP */
@@ -193,10 +249,125 @@ footer {
             -apple-system,
             BlinkMacSystemFont,
             sans-serif;
-        color: #252b42;}
-    
+        color: #252b42;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3vw 5vw 3vw 5vw;
+        border-bottom: 1px solid #cccccc;
+    }
+
+    .logo-circle {
+        width: 3.5rem;
+        border-radius: 50%;
+
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 2vw;
+        font-size: 0.9rem;
+    }
+
+    header nav ul li a {
+        color: var(--texto-principal);
+        font-weight: 500;
+    }
+
+    header nav ul li a.ativo {
+        color: #4988C4;
+        font-weight: 700;
+    }
+
+    .header-icones {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
     .sino img {
-        width: 1.8rem;
+        width: 27px;
         height: auto;
+    }
+    .avatar img {
+    width: 100%;
+}
+
+    .header-icones .avatar {
+        width: 1.8rem;
+        height: 1.8rem;
+        border-radius: 50%;
+        background-color: #d9d9d9;
+        display: inline-block;
+    }
+    div.frese{
+        display: block;
+        padding: 0 20vw 10vw 5px;
+        font-size: 50px;
+    }
+
+        div.frasedaimagem img{
+        display: block;
+    }
+
+    footer {
+        background-color: #1C4D8D;
+        color: #ffffff;
+        padding: 2rem 5%;
+        margin-top: 3.5rem;
+    }
+
+    .footer-container {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .footer-container .logo-circle {
+        width: 120px;
+        height: auto;
+        border-radius: 0%;
+    }
+
+    .footer-container .logo-circle img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+
+    .footer-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .footer-links a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 0.85rem;
+    }
+
+    .footer-copy p {
+        margin: 0;
+        font-size: 0.75rem;
+        opacity: 0.8;
+        font-weight: 700;
+    }
+
+    .footer-redes {
+        display: flex;
+        gap: 0.8rem;
+    }
+
+    .footer-redes img {
+        width: 20px;
+        height: 20px;
     }
 }

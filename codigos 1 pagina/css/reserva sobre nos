@@ -2,7 +2,6 @@
 
 
 
-
 /* ================================= */
 /*        FOODER DO CELULAR         */
 /* ================================= */
@@ -223,47 +222,7 @@
         background-color: #d9d9d9;
         display: inline-block;
     }
-    /*  ==================== */
-    /*      MENU DO DESKTOP  */
-    /*  ==================== */
-
-    .comandos {
-        display: flex;
-        align-items: center;
-        gap: 110px;
-    }
-
-
-    .comandos .inicial a {
-        color: rgb(73, 136, 196);
-        font-weight: bold;
-    }
-
-    /*  ==================== */
-    /*      BODY DO DESKTOP  */
-    /*  ==================== */
-
-
-    .frasedaimagem img {
-        padding: 1vw 15vw 5vw 5vw;
-    }
-
-    .frasedaimagem {
-        position: relative;
-        /* Isso cria o "limite" para o texto não sair da imagem */
-        display: inline-block;
-        width: 100%;/
-    }
-
-
-    .frese {
-        position: absolute;
-        top: 32%;
-        left: 13%;
-        color: white;
-        font-size: 59px;
-        padding: 1vw 30vw 1vw 1vw;
-    }
+  
 
     div.nossamissao {
         display: flex;
