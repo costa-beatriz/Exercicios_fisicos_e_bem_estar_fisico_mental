@@ -78,9 +78,7 @@ header nav ul li a.ativo {
   width: 10%;
 }
 
-.avatar img {
-  width: 10%;
-}
+
 
 /* MEDIA QUERY - DESKTOP */
 @media screen and (min-width: 600px) {

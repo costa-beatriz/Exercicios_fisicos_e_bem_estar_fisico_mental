@@ -73,7 +73,6 @@ header {
 
     header div.logo-circle img {
         width: 20%;
-    
 
     }
 
@@ -97,9 +96,7 @@ header nav ul li a.ativo {
     width: 10%;
 }
 
-.avatar img {
-    width: 10%;
-}
+
 main section.comeco {
 
     background-color: #E6E5E5;
@@ -515,6 +512,9 @@ header nav ul li a.ativo {
         position: relative;
 
     }
+    section.beneficios div.imagem img {
+    display: block;
+}
 
     section.beneficios h2 {
         font-weight: 700;

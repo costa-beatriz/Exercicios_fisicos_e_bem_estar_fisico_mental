@@ -52,11 +52,11 @@ header {
     border-bottom: 1px solid #cccccc;
 }
 
-    header div.logo-circle img {
-        width: 20%;
-    
+header div.logo-circle img {
+    width: 20%;
 
-    }
+
+}
 
 header nav ul {
     font-size: 1rem;
@@ -81,7 +81,8 @@ header nav ul li a.ativo {
 .avatar img {
     width: 10%;
 }
-div.frese{
+
+div.frese {
     display: none;
 }
 
@@ -105,6 +106,10 @@ div.nossamissao {
     padding: 10px 17px;
     font-size: 20px;
     font-weight: 600;
+}
+
+section.missao div.escritorio img {
+    display: none;
 }
 
 div.tres {
@@ -133,47 +138,47 @@ div.dividir p.Acreditamos {
     font-weight: 600;
 }
 
-  /*  ==================== */
-    /*      MENU DO DESKTOP  */
-    /*  ==================== */
+/*  ==================== */
+/*      MENU DO DESKTOP  */
+/*  ==================== */
 
-    .comandos {
-        display: flex;
-        align-items: center;
-        gap: 110px;
-    }
-
-
-    .comandos .inicial a {
-        color: rgb(73, 136, 196);
-        font-weight: bold;
-    }
-
-    /*  ==================== */
-    /*      BODY DO DESKTOP  */
-    /*  ==================== */
+.comandos {
+    display: flex;
+    align-items: center;
+    gap: 110px;
+}
 
 
-    .frasedaimagem img {
-        padding: 1vw 15vw 5vw 5vw;
-    }
+.comandos .inicial a {
+    color: rgb(73, 136, 196);
+    font-weight: bold;
+}
 
-    .frasedaimagem {
-        position: relative;
-        /* Isso cria o "limite" para o texto não sair da imagem */
-        display: inline-block;
-        width: 100%;/
-    }
+/*  ==================== */
+/*      BODY DO DESKTOP  */
+/*  ==================== */
 
 
-    .frese {
-        position: absolute;
-        top: 32%;
-        left: 13%;
-        color: white;
-        font-size: 59px;
-        padding: 1vw 30vw 1vw 1vw;
-    }
+.frasedaimagem img {
+    padding: 1vw 15vw 5vw 5vw;
+}
+
+.frasedaimagem {
+    position: relative;
+    /* Isso cria o "limite" para o texto não sair da imagem */
+    display: inline-block;
+    width: 100%;/
+}
+
+
+.frese {
+    position: absolute;
+    top: 32%;
+    left: 13%;
+    color: white;
+    font-size: 59px;
+    padding: 1vw 30vw 1vw 1vw;
+}
 
 
 /* === FOOTER == */
@@ -260,7 +265,7 @@ footer {
         border-bottom: 1px solid #cccccc;
     }
 
-    header div.logo-circle img{
+    header div.logo-circle img {
         width: 3.5rem;
         border-radius: 50%;
 
@@ -292,9 +297,10 @@ footer {
         width: 27px;
         height: auto;
     }
+
     .avatar img {
-    width: 100%;
-}
+        width: 100%;
+    }
 
     .header-icones .avatar {
         width: 1.8rem;
@@ -303,15 +309,38 @@ footer {
         background-color: #d9d9d9;
         display: inline-block;
     }
-    div.frese{
+
+    div.frese {
         display: block;
-        padding: 0 20vw 10vw 5px;
+        padding: 10px 33vw 10vw 5px;
         font-size: 50px;
     }
 
-        div.frasedaimagem img{
+    div.frasedaimagem img {
+        display: block;
+        padding: 30px 17vw 0px 5vw;
+    }
+
+    section.missao div.escritorio img {
         display: block;
     }
+section.missao div{
+    display: flex;
+}
+section.missao h2{
+    font-size: 4.5vw;
+    font-weight: 600;
+    padding: 70px 0 40px 70px;
+}
+section.missao p{
+    padding: 0 29vw 0 50px;
+}
+section.missao  {
+    padding:  0 10px 0 0;
+
+}
+
+    
 
     footer {
         background-color: #1C4D8D;
