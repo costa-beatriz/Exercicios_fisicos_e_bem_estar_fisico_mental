@@ -260,7 +260,7 @@ footer {
         border-bottom: 1px solid #cccccc;
     }
 
-    .logo-circle {
+    header div.logo-circle img{
         width: 3.5rem;
         border-radius: 50%;
 

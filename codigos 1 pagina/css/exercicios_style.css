@@ -371,14 +371,15 @@ header {
   border-bottom: 1px solid #cccccc;
 }
 
-.logo-circle {
+header div.logo-circle img {
   width: 3.5rem;
   border-radius: 50%;
+
 }
 
 header nav ul {
   display: flex;
-
+  gap: 2vw;
   font-size: 0.9rem;
 }
 

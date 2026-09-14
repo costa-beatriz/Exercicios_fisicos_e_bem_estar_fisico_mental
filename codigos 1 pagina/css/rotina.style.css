@@ -115,10 +115,10 @@ header nav ul li a.ativo {
     border-bottom: 1px solid #cccccc;
   }
 
-  .logo-circle {
+  header div.logo-circle img{
     width: 3.5rem;
     border-radius: 50%;
-    background-color: var(--azul);
+
   }
 
   header nav ul {
