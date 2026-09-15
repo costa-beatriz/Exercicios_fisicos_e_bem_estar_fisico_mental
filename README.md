@@ -484,5 +484,7 @@ pie title Andamento do projeto
     "Concluído" : 70
     "Em desenvolvimento" : 25
     "Ideias e melhorias" : 5
-
-
+```
+``` 
+O projeto está aproximadamente 70% concluído. Ainda existem algumas partes em desenvolvimento e algumas ideias que podem ser adicionadas futuramente.
+```
