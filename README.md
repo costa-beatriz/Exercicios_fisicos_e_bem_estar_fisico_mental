@@ -456,3 +456,33 @@ ultimos passos do CSS...
 ### Observação
 
 Aula do Kennedy
+
+# ATA 13.1 — 14/09/2026 #
+
+**Data: 14/09/2026**
+
+**Coordenadora: Beatriz Gomes**
+
+**Secretário e responsável pelo GitHub: Julio Kubiack**
+
+### Atividades realizadas
+
+Nesta reunião, continuamos o desenvolvimento do site do projeto. Trabalhamos principalmente na página “Sobre nós”, ajustando o HTML e o CSS para deixar a página mais parecida com o modelo feito no Figma.
+
+Também foram feitos ajustes no header e footer, deixando os dois padronizados com as outras páginas do site. Foram realizados ajustes no tamanho das imagens, organização das seções e na responsividade para celular e desktop.
+
+Além disso, foram corrigidos detalhes da seção “Etapas do desenvolvimento”, principalmente as caixas azuis com os textos, para ficarem mais próximas do modelo do Figma.
+
+***Responsabilidades:***
+
+***Julio Kubiack***: organização do HTML e CSS da página “Sobre nós”, ajustes de responsividade e organização do GitHub
+
+### Progresso do projeto
+
+```mermaid
+pie title Andamento do projeto
+    "Concluído" : 70
+    "Em desenvolvimento" : 25
+    "Ideias e melhorias" : 5
+
+
