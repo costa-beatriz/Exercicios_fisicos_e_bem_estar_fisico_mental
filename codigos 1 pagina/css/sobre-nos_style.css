@@ -1,62 +1,40 @@
-/* ==== FORMATAÇÃO GERAL === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 html {
-    font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
-    font-family:
-        "Mulish",
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        sans-serif;
-    color: #252b42;
+    font-size: 16px;
+    font-family: "Mulish", system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
     text-align: center;
 }
 
-h1 {
-    font-family: "Nunito", sans-serif;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Oswald", sans-serif;
-
-}
-
 body {
-    background-color: #e6e5e5;
+    background-color: #e8e9eb;
 }
 
-/* ===== cores base ===== */
 :root {
-    --azul: #4a90d9;
-    --azul-escuro: #17436f;
-    --azul-claro: #eaf3fb;
-    --azul-footer: #5b93c5;
-    --verde-claro: #d9f0e6;
-    --cinza-texto: #6b7280;
-    --texto-principal: #252b42;
+    --azul-principal: #1c4d8d;
+    --azul-medio: #4988c4;
+    --azul-claro: #d9e6f2;
+    --azul-fundo-card: #e4eef7;
+    --azul-escuro-footer: #153966;
+    --texto-escuro: #252b42;
+    --texto-cinza: #555555;
 }
-
-
-
-/* ================================= */
-/*        HEADER DO CELULAR         */
-/* ================================= */
-
 
 header {
     padding: 3vw 5vw;
     border-bottom: 1px solid #cccccc;
 }
 
-header div.logo-circle img {
-    width: 20%;
+    header div.logo-circle img {
+        width: 20%;
+    
 
-
-}
+    }
 
 header nav ul {
     font-size: 1rem;
@@ -82,299 +60,238 @@ header nav ul li a.ativo {
     width: 10%;
 }
 
-div.frese {
-    display: none;
-}
 
-div.frasedaimagem img {
-    display: none;
-}
-
-div.frese {
-    padding: 10px;
-    font-size: 30px;
-    font-weight: 800;
-}
-
-section.missao h2 {
-    padding: 10px;
-    font-size: 25px;
-    font-weight: 700;
-}
-
-div.nossamissao {
-    padding: 10px 17px;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-section.missao div.escritorio img {
-    display: none;
-}
-
-div.tres {
-    width: 30%;
-    display: flex;
-    gap: 10px;
-    margin: 10px;
-}
-
-div.mais {
-    width: 30%;
-    display: flex;
-    gap: 10px;
-    margin: 10px;
-}
-
-div.dividir h2 {
-    padding: 10px;
-    font-size: 50px;
-    font-weight: 800;
-}
-
-div.dividir p.Acreditamos {
-    padding: 10px;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-/*  ==================== */
-/*      MENU DO DESKTOP  */
-/*  ==================== */
-
-.comandos {
-    display: flex;
-    align-items: center;
-    gap: 110px;
-}
-
-
-.comandos .inicial a {
-    color: rgb(73, 136, 196);
-    font-weight: bold;
-}
-
-/*  ==================== */
-/*      BODY DO DESKTOP  */
-/*  ==================== */
-
-
-.frasedaimagem img {
-    padding: 1vw 15vw 5vw 5vw;
-}
-
-.frasedaimagem {
-    position: relative;
-    /* Isso cria o "limite" para o texto não sair da imagem */
-    display: inline-block;
-    width: 100%;/
-}
-
-
-.frese {
-    position: absolute;
-    top: 32%;
-    left: 13%;
-    color: white;
-    font-size: 59px;
-    padding: 1vw 30vw 1vw 1vw;
-}
-
-
-/* === FOOTER == */
-
-footer {
-    background-color: #1C4D8D;
-    color: #ffffff;
-    padding: 2rem 5%;
-    margin-top: 3.5rem;
-}
-
-.footer-container {
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.footer-container .logo-circle {
-    width: 120px;
-    height: auto;
-    border-radius: 0%;
-}
-
-.footer-container .logo-circle img {
+.avatar img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sobre-nos {
+    width: 100%;
+    padding: 1.5rem 5%;
+}
+
+.introducao {
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.imagem-introducao {
+    position: relative;
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.imagem-introducao img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
+.imagem-introducao::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(23, 67, 111, 0.20);
+}
 
-.footer-links {
+.imagem-introducao h1 {
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+    left: 25px;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.missao {
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
 }
 
-.footer-links a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 0.85rem;
+.texto-missao {
+    width: 100%;
 }
 
-.footer-copy p {
-    margin: 0;
-    font-size: 0.75rem;
-    opacity: 0.8;
-    font-weight: 700;
-}
-
-.footer-redes {
-    display: flex;
-    gap: 0.8rem;
-}
-
-.footer-redes img {
-    width: 20px;
-    height: 20px;
-}
-
-/* MEDIA QUERY - DESKTOP */
-@media screen and (min-width: 600px) {
-
-    /*===GERAL TODOS VÃO TER O MESMO TIPO ===*/
-    html {
-        text-align: left;
-        font-size: clamp(0.9rem, calc(0.5rem + 0.6vw), 1.2rem);
-        font-family:
-            "Mulish",
-            system-ui,
-            -apple-system,
-            BlinkMacSystemFont,
-            sans-serif;
-        color: #252b42;
-    }
-
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 3vw 5vw 3vw 5vw;
-        border-bottom: 1px solid #cccccc;
-    }
-
-    header div.logo-circle img {
-        width: 3.5rem;
-        border-radius: 50%;
-
-    }
-
-    header nav ul {
-        display: flex;
-        gap: 2vw;
-        font-size: 0.9rem;
-    }
-
-    header nav ul li a {
-        color: var(--texto-principal);
-        font-weight: 500;
-    }
-
-    header nav ul li a.ativo {
-        color: #4988C4;
-        font-weight: 700;
-    }
-
-    .header-icones {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .sino img {
-        width: 27px;
-        height: auto;
-    }
-
-    .avatar img {
-        width: 100%;
-    }
-
-    .header-icones .avatar {
-        width: 1.8rem;
-        height: 1.8rem;
-        border-radius: 50%;
-        background-color: #d9d9d9;
-        display: inline-block;
-    }
-
-    div.frese {
-        display: block;
-        padding: 10px 33vw 10vw 5px;
-        font-size: 50px;
-    }
-
-    div.frasedaimagem img {
-        display: block;
-        padding: 30px 17vw 0px 5vw;
-    }
-
-    section.missao div.escritorio img {
-        display: block;
-    }
-section.missao div{
-    display: flex;
-}
-section.missao h2{
-    font-size: 4.5vw;
+.texto-missao h2,
+.texto-nos h2 {
+    color: #252b42;
+    font-size: 1.6rem;
     font-weight: 600;
-    padding: 70px 0 40px 70px;
-}
-section.missao p{
-    padding: 0 29vw 0 50px;
-}
-section.missao  {
-    padding:  0 10px 0 0;
-
+    margin-bottom: 0.8rem;
 }
 
-    
+.texto-missao p,
+.texto-nos p {
+    color: #252b42;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.imagem-missao {
+    width: 100%;
+}
+
+.imagem-missao img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+.nos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.equipe {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.pessoa {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.pessoa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.texto-nos {
+    width: 100%;
+}
+
+.texto-nos p + p {
+    margin-top: 1.3rem;
+}
+
+.etapas {
+    width: 100%;
+}
+
+.etapas > h2 {
+    color: #252b42;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.etapas > h2 strong {
+    font-weight: 800;
+}
+
+.linha-etapas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.etapa {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.caixa-etapa {
+    width: 100%;
+    max-width: 300px;
+    min-height: 150px;
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c4d8d;
+    border-radius: 8px;
+}
+
+.caixa-etapa p {
+    color: #ffffff;
+    font-size: 0.75rem;
+    line-height: 1.35;
+    text-align: center;
+}
+
+.frase-final {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.frase-final h2 {
+    color: #252b42;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.frase-final strong {
+    font-weight: 800;
+}
+@media screen and (max-width: 599px) {
 
     footer {
-        background-color: #1C4D8D;
+        background-color: #1c4d8d;
         color: #ffffff;
-        padding: 2rem 5%;
-        margin-top: 3.5rem;
     }
+
 
     .footer-container {
         max-width: 900px;
         margin: 0 auto;
+
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 1rem;
+        justify-content: center;
+        padding: 8vw 0 0 0;
+        gap: 1.5rem;
+        text-align: center;
     }
 
-    .footer-container .logo-circle {
-        width: 120px;
-        height: auto;
-        border-radius: 0%;
-    }
 
-    .footer-container .logo-circle img {
+    /* LOGO */
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
         width: 100%;
-        height: auto;
-        display: block;
     }
 
+    .logo-circle-fim {
+        width: 30%;
+        height: auto;
+    }
+
+
+    /* LINKS */
 
     .footer-links {
         display: flex;
-        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 0.8rem;
     }
 
     .footer-links a {
@@ -383,20 +300,212 @@ section.missao  {
         font-size: 0.85rem;
     }
 
+
+    /* TEXTOS */
+
+    .footer-copy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 0.5rem;
+    }
+
     .footer-copy p {
         margin: 0;
         font-size: 0.75rem;
         opacity: 0.8;
         font-weight: 700;
+        text-align: center;
     }
+
+
+    /* REDES SOCIAIS */
 
     .footer-redes {
         display: flex;
-        gap: 0.8rem;
+        justify-content: center;
+        align-items: center;
+
+        gap: 1rem;
     }
 
     .footer-redes img {
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
     }
+
+}
+
+
+
+
+
+@media screen and (min-width: 600px) {
+    header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 5vw 3vw 5vw;
+    border-bottom: 1px solid #cccccc;
+  }
+
+  header div.logo-circle img{
+    width: 3.5rem;
+    border-radius: 50%;
+
+  }
+
+  header nav ul {
+    display: flex;
+    gap: 2vw;
+    font-size: 0.9rem;
+  }
+
+  header nav ul li a {
+    color: var(--texto-principal);
+    font-weight: 500;
+  }
+
+  header nav ul li a.ativo {
+    color: #4988C4;
+    font-weight: 700;
+  }
+
+  .header-icones {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .sino img {
+    width: 27px;
+    height: auto;
+  }
+
+  .header-icones .avatar {
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    display: inline-block;
+  }
+
+    
+    .imagem-introducao {
+        height: 300px;
+    }
+
+    .imagem-introducao h1 {
+        font-size: 2.5rem;
+    }
+
+    .missao {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2.5rem;
+    }
+
+    .texto-missao {
+        width: 60%;
+    }
+
+    .texto-missao h2 {
+        font-size: 2rem;
+    }
+
+    .imagem-missao {
+        width: 80%;
+    }
+
+    .nos {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2.5rem;
+    }
+
+    .equipe {
+        width: 48%;
+        gap: 10px;
+        border-radius: 50px;
+    }
+
+    .texto-nos {
+        width: 30%;
+    }
+
+    .texto-nos h2 {
+        font-size: 2rem;
+    }
+
+    .linha-etapas {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .frase-final {
+        margin-top: 4rem;
+    }
+
+    .frase-final h2 {
+        font-size: 1.8rem;
+    }
+
+footer {
+    background-color: #1C4D8D;
+    color: #ffffff;
+    padding: 2rem 5%;
+    margin-top: 3.5rem;
+  }
+
+  .footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-container .logo-circle {
+    width: 120px;
+    height: auto;
+    border-radius: 0%;
+  }
+
+  .footer-container .logo-circle img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+  .footer-links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+
+  .footer-copy p {
+    margin: 0;
+    font-size: 0.75rem;
+    opacity: 0.8;
+    font-weight: 700;
+  }
+
+  .footer-redes {
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  .footer-redes img {
+    width: 20px;
+    height: 20px;
+  }
 }
