@@ -597,6 +597,52 @@ header nav ul li a.ativo {
     line-height: 1.5;
     margin: 0;
   }
+  /* ================================= */
+/*      EXERCÍCIOS DO SUPABASE       */
+/* ================================= */
+
+#lista-exercicios {
+  width: 90%;
+  margin: 6vw auto 200px auto;
+  padding: 4vw 2vw;
+  background-color: #dbe4ee;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#lista-exercicios > h2 {
+  font-size: 3vw;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #1c1c1c;
+}
+
+#lista-exercicios > div {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+  min-height: 180px;
+  margin: 1.5vw;
+  padding: 2vw;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #c9d4e0;
+  text-align: left;
+}
+
+#lista-exercicios > div h3 {
+  color: #17436f;
+  font-size: 1.5vw;
+  margin-bottom: 15px;
+}
+
+#lista-exercicios > div p {
+  font-size: 0.9vw;
+  line-height: 1.5;
+  margin: 8px 0;
+  color: #393939;
+}
 
   /* ================================= */
   /*        FOOTER   DESKTOP           */

@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <script type="module" src="java.script/cadastro.js"></script>
     <link
       rel="shortcut icon"
       href="img_sobre-nos/cerebro-pensnte-pequeno.png"
       type="image/x-icon"
     />
 
-    <title>Login</title>
+    <title>Cadastro - Be Well</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,8 +20,8 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/login_style.css" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/login_style.css" />
   </head>
 
   <body>
@@ -29,19 +29,27 @@
       <div class="login">
         <img src="img_progresso/logo.png" alt="logo" />
 
-        <h2>Entre em sua conta</h2>
+        <h2>Crie sua conta</h2>
 
-        <p>informe seu Email e Senha</p>
+        <p>Preencha seus dados para começar</p>
 
-        <form id="loginForm">
+        <form id="cadastroForm">
+          <input type="text" id="nome" placeholder="Seu nome" required />
+
           <input type="email" id="email" placeholder="Seu e-mail" required />
 
           <input type="password" id="senha" placeholder="Sua senha" required />
 
-          <button type="submit">Acessar</button>
+          <input
+            type="password"
+            id="confirmarSenha"
+            placeholder="Confirme sua senha"
+            required
+          />
 
-          <a href="exercicio_index.html">Esqueceu sua senha?</a>
-          <a href="cadastro.html">Ainda não possui uma conta? Cadastre-se</a>
+          <button type="submit">CRIAR CONTA</button>
+
+          <a href="perfil_index.html">Já possui uma conta? Entrar</a>
         </form>
       </div>
     </div>
