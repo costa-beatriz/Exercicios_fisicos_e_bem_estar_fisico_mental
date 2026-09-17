@@ -106,10 +106,12 @@ main section.comeco {
 section.comeco img {
     width: fit-content;
     margin-top: 2vw;
+    border-radius: 5vw;
+    max-width: 90vw;
 }
 
 section.comeco h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     padding: 0 0 5px 0;
 }
 
@@ -119,7 +121,7 @@ section.comeco h2 span {
 
 section.comeco p {
     padding: 2vw 0vw 8vw 0;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
 }
 
 section.comeco div.texto {
@@ -129,46 +131,64 @@ section.comeco div.texto {
 
 
 section.diferenciais h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 6vw;
+    
 }
 
 section.diferenciais h3 span {
     font-weight: 600;
+    
 }
 
 section.diferenciais ul li img {
     max-width: 30%;
     display: block;
     margin: 0 auto;
+     width: 56%;            
+  height: auto;
+  max-width: 200px
 }
 
 section.diferenciais ul li {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     padding: 1vw 0vw 0vw 4vw;
 }
+
 
 section.diferenciais ul {
     position: relative;
     bottom: 5vw;
+     display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Força 2 colunas iguais */
+  gap: 10vw;
 }
 
 section.diferenciais h4 {
     font-weight: 700;
     padding-bottom: 3vw;
 }
+section.beneficios {
+      background: linear-gradient(#9bb8df 0%,
+                #C9D4FF 100%);
+        border-radius: 6%;
+        margin-top: 10vw;
+        
+    
+}
 
 .item {
     display: flex;
-    padding: 3vw 2vw 0vw 4vw;
+    padding: 7vw 2vw 0vw 4vw;
     position: relative;
     bottom: 3.7vw;
+    left: 5vw;
 }
 
 section.beneficios .texto {
     max-width: 200px;
-    font-size: 1.1rem;
+    font-size: 0.8rem
 }
 
 section.beneficios h2 {
@@ -181,15 +201,15 @@ section.beneficios h2 {
 
 .numero {
     margin: 0vw 2vw;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: #ffffff;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
     font-size: 1.1rem;
     position: relative;
-    padding: 11.5px;
+    padding: 5px;
 
 }
 
@@ -199,7 +219,7 @@ section.beneficios div.imagem img {
 
 section.beneficios div.direitatexto {
     margin-top: 10vw;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .recurso {
@@ -426,6 +446,7 @@ header nav ul li a.ativo {
     section.comeco img {
         width: fit-content;
         margin-top: 2vw;
+        max-width: 100%;
     }
 
     section.comeco h2 {
@@ -476,6 +497,9 @@ header nav ul li a.ativo {
         position: relative;
         bottom: 5vw;
         left: 1vw;
+         grid-template-columns: repeat(4, 1fr); /* Transforma em 4 colunas na mesma linha */
+    gap: 30px;
+        
     }
 
     section.diferenciais h4 {
