@@ -14,12 +14,6 @@ font-family: "Oswald", sans-serif;
 
 /* ==== FORMATAÇÃO GERAL === */
 html {
-  text-align: center;
-  font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
-
-}
-
-html {
   font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
   font-family:
     "Mulish",
@@ -60,43 +54,38 @@ body {
 }
 
 
-
-/* ================================= */
-/*        HEADER DO CELULAR         */
-/* ================================= */
-
-
+/* === header mobile === */
 
 
 header {
-    padding: 3vw 5vw;
-    border-bottom: 1px solid #cccccc;
+  padding: 3vw 5vw;
+  border-bottom: 1px solid #cccccc;
 }
 
-    header div.logo-circle img {
-        width: 20%;
-    
+header div.logo-circle img {
+  width: 20%;
 
-    }
+
+}
 
 header nav ul {
-    font-size: 1rem;
-    padding: 5px 0 5px 0;
+  font-size: 1rem;
+  padding: 5px 0 5px 0;
 }
 
 header nav ul li a {
-    color: var(--texto-principal);
-    font-weight: 600;
+  color: var(--texto-principal);
+  font-weight: 600;
 }
 
 header nav ul li a.ativo {
-    color: #4988C4;
-    font-weight: 800;
+  color: #4988C4;
+  font-weight: 800;
 
 }
 
 .sino img {
-    width: 10%;
+  width: 10%;
 }
 
 
@@ -109,11 +98,13 @@ main {
 /* === section banner mobile === */
 
 .banner {
+  align-items: center;
   padding: 4vw;
   position: relative;
 }
 
 .banner img {
+  align-items: center;
   max-width: 85vw;
   display: block;
   margin-bottom: 2vw;
@@ -140,7 +131,7 @@ main {
 }
 
 .porque h2 {
-  font-size: 6.3vw;
+  font-size: 1.2rem;
   padding-bottom: 2vw;
 }
 
@@ -149,7 +140,7 @@ main {
 }
 
 .porque .texto p {
-  font-size: 3.5vw;
+  font-size: 3.3vw;
 }
 
 .porque .img {
@@ -167,7 +158,7 @@ main {
 }
 
 .comecar h2 {
-  font-size: 6.3vw;
+  font-size: 1.2rem;
   margin-bottom: 5px;
   padding-bottom: 1vw;
 }
@@ -203,111 +194,154 @@ main {
   max-width: 70%;
 }
 
+/* === section categorias === */
+
+.categorias {
+  margin-top: 10vw;
+  background-color: #dbe4ee;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.categorias h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #000000;
+}
+
+.categorias ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categorias ul li {
+  padding: 15px;
+  margin-bottom: 25px;
+  background-color: #46698aab;
+  border-radius: 16px;
+  color: #ffffff;
+}
+
+.cabecalho-categoria {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.cabecalho-categoria img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.cabecalho-categoria h3 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.conteudo-categoria {
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo-categoria img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.conteudo-categoria p {
+  width: 100%;
+  margin: 0;
+  color: #ffffff;
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #1c4d8d;
+  color: #ffffff;
+}
 
 
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8vw 0 0 0;
+  gap: 1.5rem;
+  text-align: center;
+}
 
 
+/* LOGO */
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo-circle-fim {
+  width: 30%;
+  height: auto;
+}
 
 
+/* LINKS */
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 0.8rem;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
 
 
+/* TEXTOS */
+
+.footer-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 0.5rem;
+}
+
+.footer-copy p {
+  margin: 0;
+  font-size: 0.75rem;
+  opacity: 0.8;
+  font-weight: 700;
+  text-align: center;
+}
 
 
+/* REDES SOCIAIS */
 
+.footer-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-
-
-/* ================================= */
-/*        FOOTER DO CELULAR         */
-/* ================================= */
-
-@media screen and (max-width: 599px) {
-
-  footer {
-    background-color: #1c4d8d;
-    color: #ffffff;
-  }
-
-
-  .footer-container {
-    max-width: 900px;
-    margin: 0 auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 8vw 0 0 0;
-    gap: 1.5rem;
-    text-align: center;
-  }
-
-
-  /* LOGO */
-
-  .footer-logo {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .logo-circle-fim {
-    width: 30%;
-    height: auto;
-  }
-
-
-  /* LINKS */
-
-  .footer-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    gap: 0.8rem;
-  }
-
-  .footer-links a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 0.85rem;
-  }
-
-
-  /* TEXTOS */
-
-  .footer-copy {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    gap: 0.5rem;
-  }
-
-  .footer-copy p {
-    margin: 0;
-    font-size: 0.75rem;
-    opacity: 0.8;
-    font-weight: 700;
-    text-align: center;
-  }
-
-
-  /* REDES SOCIAIS */
-
-  .footer-redes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    gap: 1rem;
-  }
-
-  .footer-redes img {
-    width: 25px;
-    height: 25px;
-  }
-
+  gap: 1rem;
 }
 
 .footer-redes img {
@@ -318,13 +352,6 @@ main {
 
 }
 
-
-
-
-
-
-
-/*FAZER PARA O CELULAR...*/
 
 /* MEDIA QUERY - DESKTOP */
 @media screen and (min-width: 600px) {
@@ -345,73 +372,66 @@ main {
   }
 
   /* ===== cores base ===== */
-  :root {
-    --azul: #4a90d9;
-    --azul-escuro: #17436f;
-    --azul-claro: #eaf3fb;
-    --azul-footer: #5b93c5;
-    --verde-claro: #d9f0e6;
-    --cinza-texto: #6b7280;
-    --texto-principal: #252b42;
+
+  /* === header desktop === */
+
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 5vw 3vw 5vw;
+    border-bottom: 1px solid #cccccc;
   }
 
 
-  /* ================================= */
-  /*        HEADER DO DESKTOP         */
-  /* ================================= */
+  /* === header desktop === */
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 3vw 5vw 3vw 5vw;
-  border-bottom: 1px solid #cccccc;
-}
 
-header div.logo-circle img {
-  width: 3.5rem;
-  border-radius: 50%;
+  header div.logo-circle img {
+    width: 3.5rem;
+    border-radius: 50%;
 
-}
+  }
 
-header nav ul {
-  display: flex;
-  gap: 2vw;
-  font-size: 0.9rem;
-}
+  header nav ul {
+    display: flex;
+    gap: 2vw;
+    font-size: 0.9rem;
+  }
 
-header nav ul li a {
-  color: var(--texto-principal);
-  font-weight: 500;
-}
+  header nav ul li a {
+    color: var(--texto-principal);
+    font-weight: 500;
+  }
 
-header nav ul li a.ativo {
-  color: #4988C4;
-  font-weight: 700;
-}
+  header nav ul li a.ativo {
+    color: #4988C4;
+    font-weight: 700;
+  }
 
-.header-icones {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
+  .header-icones {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
 
-.sino img {
-  width: 27px;
-  height: auto;
-}
+  .sino img {
+    width: 27px;
+    height: auto;
+  }
 
-.header-icones .avatar {
-  width: 1.8rem;
-  height: 1.8rem;
-  border-radius: 50%;
-  background-color: #d9d9d9;
-  display: inline-block;
-}
+  .header-icones .avatar {
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    display: inline-block;
+  }
 
-  /* ================================= */
-  /*          BANNER DO DESKTOP           */
-  /* ================================= */
+
+  /* === banner desktop === */
+
 
   .banner {
     padding: 4vw 3vw;
@@ -436,9 +456,8 @@ header nav ul li a.ativo {
   }
 
 
-  /* ================================= */
-  /*        PORQUE   DESKTOP           */
-  /* ================================= */
+  /* === section porque desktop === */
+
 
   .porque {
     display: flex;
@@ -446,7 +465,7 @@ header nav ul li a.ativo {
     margin-bottom: 2vw;
   }
 
-  .porque .texto {
+  h desk .porque .texto {
     width: 55%;
   }
 
@@ -467,10 +486,8 @@ header nav ul li a.ativo {
     width: 45%;
   }
 
+  /* === section como começar desktop === */
 
-  /* ================================= */
-  /*        COMO COMEÇAR   DESKTOP           */
-  /* ================================= */
   .comecar {
     width: 90%;
     margin: 6vw auto 200px auto;
@@ -529,9 +546,8 @@ header nav ul li a.ativo {
     margin: 0;
   }
 
-  /* ================================= */
-  /*        CATEGORIAS   DESKTOP           */
-  /* ================================= */
+
+  /* === section categorias desktop === */
 
 
   .categorias {
@@ -597,56 +613,8 @@ header nav ul li a.ativo {
     line-height: 1.5;
     margin: 0;
   }
-  /* ================================= */
-/*      EXERCÍCIOS DO SUPABASE       */
-/* ================================= */
 
-#lista-exercicios {
-  width: 90%;
-  margin: 6vw auto 200px auto;
-  padding: 4vw 2vw;
-  background-color: #dbe4ee;
-  border-radius: 20px;
-  text-align: center;
-}
-
-#lista-exercicios > h2 {
-  font-size: 3vw;
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: #1c1c1c;
-}
-
-#lista-exercicios > div {
-  display: inline-block;
-  vertical-align: top;
-  width: 40%;
-  min-height: 180px;
-  margin: 1.5vw;
-  padding: 2vw;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 16px;
-  border: 1px solid #c9d4e0;
-  text-align: left;
-}
-
-#lista-exercicios > div h3 {
-  color: #17436f;
-  font-size: 1.5vw;
-  margin-bottom: 15px;
-}
-
-#lista-exercicios > div p {
-  font-size: 0.9vw;
-  line-height: 1.5;
-  margin: 8px 0;
-  color: #393939;
-}
-
-  /* ================================= */
-  /*        FOOTER   DESKTOP           */
-  /* ================================= */
+  /* === footer desktop === */
 
 
   footer {
