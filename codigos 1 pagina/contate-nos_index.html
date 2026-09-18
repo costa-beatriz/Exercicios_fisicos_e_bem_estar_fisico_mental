@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="pt-br">
-
+ 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,10 +12,10 @@
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/contate-nos_style.CSS" />
    <link rel="shortcut icon" href="img_sobre-nos/cerebro-pensnte-pequeno.png" type="image/x-icon">
-
+ 
   <link rel="shortcut icon" href="img_sobre-nos/image-removebg-preview (1) 7.png" type="image/x-icon">
 </head>
-
+ 
 <body>
 <header>
   <div class="logo-circle">
@@ -62,33 +62,33 @@
       <img src="img_sobre-nos/cerebro-pensante-grande.png" alt="Carebro-banner" />
     </section>
     <section class="form">
-      <form action="#">
+      <form id="contatoForm">
         <p class="caixa">
           <label for="nome" class="s-radio">Qual é o seu nome completo?</label>
-          <input class="prgt-normal" type="text" placeholder="escreva seu nome aqui..." required />
+          <input class="prgt-normal" type="text" id="nome" placeholder="escreva seu nome aqui..." required />
         </p>
         <p class="caixa">
-          <label for="E-mail" class="s-radio">Qual é o seu e-mail?</label>
-          <input class="prgt-normal" type="email" placeholder="exemplo@gmail.com" required />
+          <label for="email" class="s-radio">Qual é o seu e-mail?</label>
+          <input class="prgt-normal" type="email" id="email" placeholder="exemplo@gmail.com" required />
         </p>
         <p class="caixa">
           <label for="telefone" class="s-radio">Qual é o seu número de telefone?</label>
-          <input class="prgt-normal" type="tel" placeholder="+xx xx xxxxx-xxxx" />
+          <input class="prgt-normal" type="tel" id="telefone" placeholder="+xx xx xxxxx-xxxx" />
         </p>
         <p class="caixa">
           <label for="notas" class="s-radio">Notas, sugestões ou perguntas.</label>
-          <input type="text" placeholder="escreva aqui..." />
+          <input type="text" id="notas" placeholder="escreva aqui..." />
         </p>
         <div class="retorno-box">
           <p class="pergunta">Gostaria de receber seu retorno via:</p>
-
+ 
           <div class="opcoes">
             <label class="opcao">
               <input type="radio" name="retorno" value="telefone" />
               <span class="radio-custom"></span>
               telefone
             </label>
-
+ 
             <label class="opcao">
               <input type="radio" name="retorno" value="email" />
               <span class="radio-custom"></span>
@@ -96,8 +96,8 @@
             </label>
           </div>
         </div>
-
-        <button class="btn-enviar">ENVIAR</button>
+ 
+        <button type="submit" class="btn-enviar">ENVIAR</button>
       </form>
     </section>
   </main>
@@ -128,9 +128,11 @@
       </div>
     </div>
   </footer>
-
+ 
 <script type="module" src="java.script/avatar.js"></script>
-  <link rel="stylesheet" href="css/TODOS_style.css">
-</body>
 
+  <link rel="stylesheet" href="css/TODOS_style.css">
+  <script type="module" src="java.script/contato.js"></script>
+</body>
+ 
 </html>
