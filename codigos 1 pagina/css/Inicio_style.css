@@ -91,6 +91,11 @@ header nav ul li a.ativo {
     font-weight: 800;
 
 }
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
 
 .sino img {
     width: 10%;
