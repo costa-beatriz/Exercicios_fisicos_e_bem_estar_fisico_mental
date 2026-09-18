@@ -1,9 +1,4 @@
-import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
-
-const supabaseUrl = "https://vimslajwgmuanzohzydu.supabase.co";
-const supabaseKey = "sb_publishable_wwJAaeTYapELQmcBD0qDKg_4DCUy1YU";
-
-const supabase = createClient(supabaseUrl, supabaseKey);
+import { supabase } from "./supabaseClient.js";
 
 const cadastroForm = document.getElementById("cadastroForm");
 
@@ -20,11 +15,10 @@ cadastroForm.addEventListener("submit", async (event) => {
     return;
   }
 
-  const { data: cadastro, error: erroCadastro } =
-    await supabase.auth.signUp({
-      email: email,
-      password: senha
-    });
+  const { data: cadastro, error: erroCadastro } = await supabase.auth.signUp({
+    email: email,
+    password: senha
+  });
 
   if (erroCadastro) {
     alert("Erro ao criar conta: " + erroCadastro.message);
@@ -33,12 +27,7 @@ cadastroForm.addEventListener("submit", async (event) => {
 
   const { data: usuario, error: erroUsuario } = await supabase
     .from("usuarios_db")
-    .insert([
-      {
-        nome: nome,
-        email: email
-      }
-    ])
+    .insert([{ nome: nome, email: email }])
     .select();
 
   if (erroUsuario) {
@@ -46,9 +35,8 @@ cadastroForm.addEventListener("submit", async (event) => {
     return;
   }
 
-  console.log("Usuário inserido:", usuario);
+  await supabase.auth.signOut();
 
-  alert("Conta criada com sucesso!");
-
+  alert("Conta criada com sucesso! Faça login para continuar.");
   window.location.href = "perfil_index.html";
 });

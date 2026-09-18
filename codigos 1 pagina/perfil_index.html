@@ -23,7 +23,34 @@
     <link rel="stylesheet" href="css/login_style.css" />
     <link rel="stylesheet" href="css/reset.css" />
   </head>
-
+    <header>
+      <div class="logo-circle">
+        <img src="img_rotina/logo.png" alt="logo site" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="contate-nos_index.html">Contate-nos</a></li>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre-nos_index.html" class="ativo">Sobre nós</a></li>
+          <li><a href="rotina_index.html">Rotina</a></li>
+          <li><a href="exercicio_index.html">Exercícios</a></li>
+          <li><a href="progresso_index.html">Progresso</a></li>
+          <li class="item-perfil"><a href="perfil_index.html">Perfil</a></li>
+        </ul>
+      </nav>
+      <div class="header-icones">
+        <span class="sino"
+          ><img src="img_rotina/notifications.svg" alt="sino notificações"
+        /></span>
+        <span class="avatar"
+          ><a href="perfil_index.html"
+            ><span id="avatarConteudo" class="avatar-icone">
+              <img
+                src="img_sobre-nos/icone-de-perfil-de-avatar-padrao-imagem-de-usuario-de-midia-social-icone-de-avatar-cinza-silhueta-de-perfil-em-branco-ilustracao-vetorial_561158-3485.avif"
+                alt="usuario anonimo" /></span></a
+        ></span>
+      </div>
+    </header>
   <body>
     <div class="container">
       <div class="login">
@@ -40,20 +67,16 @@
 
           <button type="submit">Acessar</button>
 
-          <a href="exercicio_index.html">Esqueceu sua senha?</a>
-          <a href="cadastro.html">Ainda não possui uma conta? Cadastre-se</a>
+          <a href="cadastro.html" class="continuar-sem-login">Ainda não possui uma conta? Cadastre-se</a>
+          <a href="index.html" class="link-sair" style="display: none">Sair da conta</a>
+          <a href="index.html" class="continuar-sem-login">Continuar sem login</a>
+          <a href="index.html" class="voltar-inicio" style="display: none;">Voltar à página principal</a>
         </form>
       </div>
     </div>
 
-    <script type="module">
-      import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
-
-      const supabaseUrl = "https://vimslajwgmuanzohzydu.supabase.co";
-
-      const supabaseKey = "sb_publishable_wwJAaeTYapELQmcBD0qDKg_4DCUy1YU";
-
-      const supabase = createClient(supabaseUrl, supabaseKey);
-    </script>
+<script type="module" src="java.script/avatar.js"></script>
+<script type="module" src="java.script/login.js"></script>
+    <link rel="stylesheet" href="css/TODOS_style.css" />
   </body>
 </html>
