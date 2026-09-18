@@ -10,7 +10,11 @@ html {
     scroll-behavior: smooth;
     text-align: center;
 }
-
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
 body {
     background-color: #e8e9eb;
 }
