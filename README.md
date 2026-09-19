@@ -481,8 +481,8 @@ Além disso, foram corrigidos detalhes da seção “Etapas do desenvolvimento�
 
 ```mermaid
 pie title Andamento do projeto
-    "Concluído" : 70
-    "Em desenvolvimento" : 25
+    "Concluído" : 80
+    "Em desenvolvimento" : 15
     "Ideias e melhorias" : 5
 ```
 ``` 
@@ -498,16 +498,16 @@ O projeto está aproximadamente 70% concluído. Ainda existem algumas partes em 
 
 ### Assunto
 
-Implementação do sistema de login/cadastro com Supabase, avatar dinâmico do usuário, ligação do formulário de Contate-nos ao banco de dados e criação da página de edição de perfil.
+Correção do envio do formulário de Contate-nos (Supabase) e implementação de sistema de recuperação de senha sem envio de e-mail.
 
 ### Responsabilidades
 
-- **Julio César da Silva Kubiack:** implementação da autenticação (login e cadastro) via Supabase; criação do avatar dinâmico no cabeçalho (foto/inicial do usuário, cor automática); ajuste do menu conforme o estado de login (Perfil, Sair da conta, Continuar sem login, Editar perfil); correção do layout do cabeçalho (header) para desktop e celular; ligação do formulário de Contate-nos ao Supabase (pendente ajuste de permissão/RLS); criação da nova página de edição de perfil (nome e senha).
+- **Julio César da Silva Kubiack:** identificação e correção do erro de permissão (RLS) que impedia o envio do formulário de Contate-nos — o problema estava no uso de `.select()` junto do `.insert()`, que exigia uma política de leitura inexistente na tabela `contatos_db`; criação de uma Edge Function no Supabase (`quick-endpoint`) para permitir a redefinição de senha de usuários sem depender de envio de e-mail de verificação, já que o projeto não possui esse serviço configurado; a função confere se o nome e o e-mail informados batem com os dados salvos na tabela `usuarios_db` e, em caso positivo, atualiza a senha diretamente pelo Supabase Auth; criação da página `recuperar-senha.html` e do script `recuperarSenha.js`, responsáveis por coletar nome, e-mail e nova senha e chamar a Edge Function; ajuste da configuração da função para desativar a exigência de verificação de JWT (Enforce JWT Verification), permitindo que ela seja chamada por usuários ainda não autenticados.
 
 ---
 
 ### Observação
 
-Pendências levantadas para a próxima etapa: resolver erro de permissão (401) no envio do formulário de Contate-nos; replicar os ajustes de header e scripts nas demais páginas do site; decidir sobre a criação de uma página de Política de Privacidade.
+O formulário de Contate-nos está funcionando corretamente e salvando as mensagens na tabela `contatos_db`. A recuperação de senha também foi testada com sucesso. Pendências que seguem em aberto: replicar os ajustes de header, avatar e menu nas demais páginas do site; decidir sobre a criação de uma página de Política de Privacidade; revisar o sistema de metas da página Progresso. tudo isso foi feito com a ideias minha, porem com o auxilio da ia "claude" mostrando e ensinando como fazia cada passo do codigo.
 
 **Fora da sala**
