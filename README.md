@@ -488,3 +488,26 @@ pie title Andamento do projeto
 ``` 
 O projeto está aproximadamente 70% concluído. Ainda existem algumas partes em desenvolvimento e algumas ideias que podem ser adicionadas futuramente.
 ```
+# Ata 13.2 – Projeto Integrador (Professor Mehran)
+
+**Data:** 19/09/2026
+
+**Coordenadora:** Beatriz Gomes
+
+**Secretário e responsável pelo GitHub:** Julio César da Silva Kubiack
+
+### Assunto
+
+Implementação do sistema de login/cadastro com Supabase, avatar dinâmico do usuário, ligação do formulário de Contate-nos ao banco de dados e criação da página de edição de perfil.
+
+### Responsabilidades
+
+- **Julio César da Silva Kubiack:** implementação da autenticação (login e cadastro) via Supabase; criação do avatar dinâmico no cabeçalho (foto/inicial do usuário, cor automática); ajuste do menu conforme o estado de login (Perfil, Sair da conta, Continuar sem login, Editar perfil); correção do layout do cabeçalho (header) para desktop e celular; ligação do formulário de Contate-nos ao Supabase (pendente ajuste de permissão/RLS); criação da nova página de edição de perfil (nome e senha).
+
+---
+
+### Observação
+
+Pendências levantadas para a próxima etapa: resolver erro de permissão (401) no envio do formulário de Contate-nos; replicar os ajustes de header e scripts nas demais páginas do site; decidir sobre a criação de uma página de Política de Privacidade.
+
+**Fora da sala**
