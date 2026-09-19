@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-br">
+ 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+  <title>Be Well - recuperar senha</title>
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+ 
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/login_style.css" />
+ 
+  <link rel="shortcut icon" href="img_sobre-nos/cerebro-pensnte-pequeno.png" type="image/x-icon">
+  <link rel="shortcut icon" href="img_sobre-nos/image-removebg-preview (1) 7.png" type="image/x-icon">
+</head>
+ 
+<body>
+  <div class="container">
+    <div class="login">
+      <img src="img_progresso/logo.png" alt="logo" />
+ 
+      <h2>Recuperar senha</h2>
+ 
+      <p>Confirme seu nome e e-mail para criar uma nova senha</p>
+ 
+      <form id="recuperarForm">
+        <input type="text" id="nome" placeholder="Seu nome completo" required />
+ 
+        <input type="email" id="email" placeholder="Seu e-mail" required />
+ 
+        <input type="password" id="novaSenha" placeholder="Nova senha" required minlength="6" />
+ 
+        <button type="submit">Redefinir senha</button>
+ 
+        <a href="perfil_index.html">Lembrou a senha? Entrar</a>
+      </form>
+    </div>
+  </div>
+ 
+  <script type="module" src="java.script/recuperarSenha.js"></script>
+</body>
+ 
+</html>
