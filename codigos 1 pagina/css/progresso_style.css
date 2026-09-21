@@ -84,6 +84,409 @@ header nav ul li a.ativo {
   display: block;
 }
 
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+section.inicio {
+  margin-bottom: 3rem;
+}
+
+section.inicio h1 {
+  font-size: 1.8rem;
+  color: black;
+}
+
+section.inicio h1 span {
+  color: black;
+  font-weight: 750;
+}
+
+.card-jornada-container {
+  position: relative;
+  width: 100%;
+  min-height: 580px;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.imagem-castelo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-position: center top;
+  z-index: 1;
+}
+
+.card-metas {
+  position: relative;
+  z-index: 2;
+  background-color: #ebebeb;
+  padding: 20px 24px;
+  border-radius: 16px;
+  width: 320px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-metas h2 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.1rem;
+  color: black;
+  font-weight: 700;
+}
+
+.card-metas p {
+  font-size: 0.8rem;
+  color: var(--texto-cinza);
+  margin: 0 0 1rem 0;
+}
+
+.medalhas-conquista {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.medalha-img {
+  width: 2rem;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.medalha-img.opaca {
+  opacity: 0.25;
+}
+
+.medalhas-conquista span {
+  font-size: 0.75rem;
+  color: var(--texto-cinza);
+  margin-left: auto;
+  font-weight: 600;
+}
+
+.lista-tarefas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-tarefas li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.lista-tarefas input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #bbb;
+  border-radius: 6px;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.lista-tarefas input[type="checkbox"]:hover {
+  border-color: var(--azul-principal);
+}
+
+.lista-tarefas input[type="checkbox"]:checked {
+  background-color: var(--azul-principal);
+  border-color: var(--azul-principal);
+}
+
+.lista-tarefas input[type="checkbox"]:checked::before {
+  content: '';
+  width: 4px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin-bottom: 2px;
+}
+
+.lista-tarefas label {
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--texto-escuro);
+}
+
+.lista-tarefas input[type="checkbox"]:checked + label {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.texto-sem-meta {
+  color: #888888;
+  font-style: italic;
+  font-size: 0.85rem;
+  text-align: center;
+  margin: 1rem 0 0.5rem 0;
+}
+
+section.grafico {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section.grafico h2 {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+section.grafico h2 span {
+  color: black;
+  font-weight: 700;
+}
+
+.canvas-wrapper {
+  width: 100%;
+  max-width: 550px;
+  height: 260px;
+  margin-bottom: 2rem;
+}
+
+.botoes-metas {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.botoes-metas button {
+  background-color: #ebebeb;
+  color: var(--azul-principal);
+  border: 1px solid var(--azul-medio);
+  padding: 0.6rem 1.6rem;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.botoes-metas button:hover {
+  background-color: var(--azul-medio);
+  color: #ebebeb;
+}
+
+/* ===== SEÇÃO 3: PRÁTICA DE EXERCÍCIOS ===== */
+section.exercicios {
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #d0d0d0;
+}
+
+.exercicios-texto {
+  flex: 1;
+  padding: 2vw 0 0 0;
+}
+
+.exercicios-texto h2 {
+  font-size: 1.4rem;
+  color: black;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+.exercicios-texto p {
+  font-size: 0.9rem;
+  color: var(--texto-cinza);
+  margin: 0 0 1.2rem 0;
+  text-align: center;
+}
+
+.exercicios-lista {
+  padding-left: 1.2rem;
+  margin: 0;
+  color: var(--texto-cinza);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  list-style-type: disc;
+}
+
+.exercicios-lista li {
+  margin-bottom: 0.8rem;
+}
+
+.exercicios-lista li span {
+  font-weight: 700;
+  color: var(--texto-escuro);
+}
+
+.exercicios-img {
+  flex-shrink: 0;
+}
+
+.exercicios-img img {
+  width: 15rem;
+  height: auto;
+  display: block;
+}
+
+/* ===== SEÇÃO 4: DICAS DE SONO ===== */
+section.sono {
+  margin-top: 3rem;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.semana {
+  background-color: #C8D4E1;
+  padding: 1.8rem;
+  border-radius: 12px;
+}
+
+.semana h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 750;
+  text-align: center;
+}
+
+.semana h3 {
+  margin-top: 1vw;
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: black;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.semana ul {
+  padding-left: 1.2rem;
+  margin: 0;
+  font-size: 0.85rem;
+  color: black;
+  line-height: 1.6;
+}
+
+.regular {
+  background-color: #7DA2C5;
+  color: #ffffff;
+  padding: 1.8rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.regular h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 750;
+}
+
+.regular ul {
+  padding-left: 1.2rem;
+  margin: 1vw;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.regular ul li span {
+  font-weight: 800;
+}
+
+/* ===== MODAL ESTILIZADO ===== */
+.modal-fundo {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-fundo.ativo {
+  display: flex;
+}
+
+.modal-conteudo {
+  background-color: #ffffff;
+  padding: 1.8rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 360px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-conteudo h3 {
+  margin-top: 0;
+  color: var(--azul-principal);
+}
+
+.modal-conteudo p {
+  font-size: 0.85rem;
+  color: var(--texto-cinza);
+}
+
+.modal-conteudo input {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.modal-acoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.modal-acoes button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-cancelar {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.btn-salvar {
+  background-color: var(--azul-medio);
+  color: #ffffff;
+}
+
 /* Footer */
 footer {
   background-color: var(--azul-principal);
