@@ -1,152 +1,6 @@
 /* ==== FORMATAÇÃO GERAL === */
 
 html {
-    font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
-    font-family:
-        "Mulish",
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        sans-serif;
-    color: #252b42;
-    text-align: center;
-}
-
-h1 {
-    font-family: "Nunito", sans-serif;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Oswald", sans-serif;
-
-}
-
-body {
-    background-color: #e6e5e5;
-}
-
-/* ===== cores base ===== */
-:root {
-    --azul: #4a90d9;
-    --azul-escuro: #17436f;
-    --azul-claro: #eaf3fb;
-    --azul-footer: #5b93c5;
-    --verde-claro: #d9f0e6;
-    --cinza-texto: #6b7280;
-    --texto-principal: #252b42;
-}
-
-
-
-/* ================================= */
-/*        HEADER DO CELULAR         */
-/* ================================= */
-
-
-header {
-    padding: 3vw 5vw;
-    border-bottom: 1px solid #cccccc;
-}
-
-    header div.logo-circle img {
-        width: 20%;
-    
-
-    }
-
-header nav ul {
-    font-size: 1rem;
-    padding: 5px 0 5px 0;
-}
-
-header nav ul li a {
-    color: var(--texto-principal);
-    font-weight: 600;
-}
-
-header nav ul li a.ativo {
-    color: #4988C4;
-    font-weight: 800;
-
-}
-
-.sino img {
-    width: 10%;
-}
-
-
-
-/* === FOOTER == */
-
-footer {
-    background-color: #1C4D8D;
-    color: #ffffff;
-    padding: 2rem 5%;
-    margin-top: 3.5rem;
-}
-
-.footer-container {
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.footer-container .logo-circle {
-    width: 120px;
-    height: auto;
-    border-radius: 0%;
-}
-
-.footer-container .logo-circle img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-
-.footer-links {
-    display: flex;
-    gap: 1rem;
-}
-
-.footer-links a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 0.85rem;
-}
-
-.footer-copy p {
-    margin: 0;
-    font-size: 0.75rem;
-    opacity: 0.8;
-    font-weight: 700;
-}
-
-.footer-redes {
-    display: flex;
-    gap: 0.8rem;
-}
-
-.footer-redes img {
-    width: 20px;
-    height: 20px;
-}
-
-/* MEDIA QUERY - DESKTOP */
-@media screen and (min-width: 600px) {
-
-
-
-/* ===== Base e Variáveis ===== */
-html {
   font-size: 16px;
   font-family: "Mulish", system-ui, -apple-system, sans-serif;
   scroll-behavior: smooth;
@@ -168,6 +22,121 @@ body {
   --texto-escuro: #252b42;
   --texto-cinza: #555555;
 }
+
+header {
+  padding: 1.5rem 5%;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
+}
+
+header div.logo-circle img {
+  width: 70px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1rem;
+}
+
+header nav ul li a {
+  color: var(--texto-escuro);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+header nav ul li a.ativo {
+  color: var(--azul-medio);
+  font-weight: 800;
+}
+
+.header-icones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+/*REVER*/
+
+.sino img {
+  width: 24px;
+  height: auto;
+}
+
+.avatar img {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  display: block;
+}
+
+/* Footer */
+footer {
+  background-color: var(--azul-principal);
+  color: #ffffff;
+  padding: 2rem 5%;
+  margin-top: 3.5rem;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-container .logo-circle img {
+  width: 120px;
+  height: auto;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.footer-copy p {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.footer-redes {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-redes img {
+  width: 24px;
+  height: 24px;
+}
+
+/* MEDIA QUERY - DESKTOP */
+@media screen and (min-width: 600px) {
 
 /* ===== HEADER ===== */
 header {
@@ -230,7 +199,6 @@ main {
   padding: 2rem 1rem;
 }
 
-/* ===== SEÇÃO 1: HERO / BANNER COM CARD DE METAS ===== */
 section.inicio {
   margin-bottom: 3rem;
 }
