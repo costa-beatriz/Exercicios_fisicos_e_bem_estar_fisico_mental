@@ -189,7 +189,7 @@ section.beneficios {
     padding: 7vw 2vw 0vw 4vw;
     position: relative;
     bottom: 3.7vw;
-    left: 19vw;
+    left: 13vw;
 }
 
 section.beneficios .texto {
@@ -526,13 +526,24 @@ header nav ul li a.ativo {
         display: flex;
         position: relative;
         bottom: 5vw;
-        left: 3vw;
+        left: 1vw;
         align-items: center;
          grid-template-columns: repeat(4, 1fr); 
     gap: 30px;
         
     }
-
+    section.diferenciais ul li.relogio h4{
+        position: relative;
+        bottom: 15px;
+    }
+    section.diferenciais ul li.relogio img {
+        position: relative;
+        bottom: 15px;
+    }
+     section.diferenciais ul li.relogio p {
+        position: relative;
+        bottom: 15px;
+     }
     section.diferenciais h4 {
         font-weight: 700;
         padding-bottom: 3vw;
@@ -548,7 +559,9 @@ header nav ul li a.ativo {
         padding: 3vw 0vw 0vw 0vw;
         position: relative;
         bottom: 3.7vw;
-        left: 8vw;
+        left: 2vw;
+        max-height: 6vw;
+        margin-top: 2vw;
     }
 
     section.beneficios .texto {
@@ -575,10 +588,11 @@ header nav ul li a.ativo {
 
     section.beneficios h2 {
         font-weight: 700;
-        font-size: 3rem;
-        padding: 1vw 0vw 1vw 10vw;
+        font-size: 2.5rem;
+        padding: 1vw 0vw 1vw 2vw;
         position: relative;
         bottom: 1vw;
+        left: 2vw;
     }
 
     section.beneficios {
@@ -588,7 +602,7 @@ header nav ul li a.ativo {
         padding-bottom: 1vw;
         ;
         max-height: 40vw;
-        padding-left: 10vw;
+
     }
 
     section.beneficios {
@@ -597,9 +611,11 @@ header nav ul li a.ativo {
     }
 
     section.beneficios div.imagem img {
-        max-width: 28vw;
+        max-width: 26vw;
         position: relative;
-        bottom: 2vw;
+        top: 1vw;
+        margin: 0vw;
+        padding: 0vw;
     }
 
     section.beneficios div.direitatexto {
@@ -611,19 +627,20 @@ header nav ul li a.ativo {
         margin: 0vw;
         padding: 0vw;
         font-size: 1rem;
+         max-width: 180px;
     }
 
     section.beneficios div.direitatexto h5 {
         font-size: 2rem;
     }
-
-    section.beneficios div.direitatexto p {
-        max-width: 180px;
-    }
-
+ section.beneficios div.direitatexto {
+    margin-right: 1vw;
+ }
     section.recursos ul {
         display: flex;
+        gap: 1vw;
         justify-content: space-evenly
+        
     }
     section.recursos ul li a { text-align: center;
          margin-right: 6.67vw; 
@@ -636,8 +653,8 @@ header nav ul li a.ativo {
            border-radius: 4vw }
 
     section.recursos img {
-        max-width: 20vw;
-        max-height: 20vw;
+        max-width: 18vw;
+        max-height: 18vw;
         border-radius: 2vw;
     }
     section.recursos ul li {
@@ -679,7 +696,7 @@ header nav ul li a.ativo {
         border-radius: 4vw
     }
     section.recursos ul li.homem a {
-        margin: 2vw;
+        margin: 1vw;
     }
 
     section.recursos {
