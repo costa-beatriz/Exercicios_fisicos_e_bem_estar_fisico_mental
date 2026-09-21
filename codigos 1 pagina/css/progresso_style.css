@@ -70,8 +70,6 @@ header nav ul li a.ativo {
   gap: 1.2rem;
 }
 
-/*REVER*/
-
 .sino img {
   width: 24px;
   height: auto;
@@ -543,44 +541,56 @@ footer {
 
 /* ===== HEADER ===== */
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 3vw 5vw;
-  border-bottom: 1px solid #cccccc;
-  background-color: #e8e9eb;
-}
+    display: flex;
+    flex-direction: row; /* Força a voltar para linha no PC */
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 5vw;
+    border-bottom: 1px solid #cccccc;
+    text-align: left; /* Corrige o text-align center do celular */
+  }
 
-header div.logo-circle img{
-  width: 3.5rem;
-  border-radius: 50%;
-}
+  header div.logo-circle img {
+    width: 3.5rem;
+    border-radius: 50%;
+    margin: 0; /* Remove o margin auto do celular */
+  }
 
-header nav ul {
-  display: flex;
-  gap: 2vw;
-  font-size: 0.9rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+  header nav ul {
+    display: flex;
+    flex-direction: row; /* Força o menu a ficar horizontal no PC */
+    gap: 2vw;
+    font-size: 0.9rem;
+  }
 
-header nav ul li a {
-  color: var(--texto-escuro);
-  font-weight: 500;
-  text-decoration: none;
-}
+  header nav ul li a {
+    color: var(--texto-principal);
+    font-weight: 500;
+  }
 
-header nav ul li a.ativo {
-  color: #4988C4;
-  font-weight: 700;
-}
+  header nav ul li a.ativo {
+    color: #4988C4;
+    font-weight: 700;
+  }
 
-.header-icones {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
+  .header-icones {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .sino img {
+    width: 27px;
+    height: auto;
+  }
+
+  .header-icones .avatar {
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    display: inline-block;
+  }
 
 .sino img {
   width: 27px;
@@ -1058,9 +1068,5 @@ section.sono {
 
   .footer-redes img {
     width: 20px;
-
   }
-
-
-
 }
