@@ -480,7 +480,7 @@ header nav ul li a.ativo {
 
     section.comeco h2 {
         font-size: 2.5rem;
-        padding: 5vw 0 0 5vw;
+        padding: 2vw 0 0 5vw;
     }
 
     section.comeco h2 span {
@@ -488,7 +488,7 @@ header nav ul li a.ativo {
     }
 
     section.comeco p {
-        padding: 5vw 0vw 0vw 5vw;
+        padding: 2vw 0vw 0vw 5vw;
         font-size: 1rem;
     }
 
@@ -519,18 +519,15 @@ header nav ul li a.ativo {
     section.diferenciais ul li {
         font-weight: 600;
         font-size: 1.2rem;
-    }
-
-    section.diferenciais ul li {
-
-        padding: 1vw 0vw 0vw 4vw;
+        padding: 1vw 0vw 0vw 0vw;
     }
 
     section.diferenciais ul {
         display: flex;
         position: relative;
         bottom: 5vw;
-        left: 10vw;
+        left: 3vw;
+        align-items: center;
          grid-template-columns: repeat(4, 1fr); 
     gap: 30px;
         
@@ -545,6 +542,7 @@ header nav ul li a.ativo {
         max-width: 250px;
     }
 
+    
     .item {
         display: flex;
         padding: 3vw 0vw 0vw 0vw;
