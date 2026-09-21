@@ -73,38 +73,62 @@ h6 {
 ========================================================= */
 
 header {
-    padding: 3vw 5vw;
-    border-bottom: 1px solid #cccccc;
+  padding: 1.5rem 5%;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
 }
 
-    header div.logo-circle img {
-        width: 20%;
-    
-
-    }
+header div.logo-circle img {
+  width: 70px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
 header nav ul {
-    font-size: 1rem;
-    padding: 5px 0 5px 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1rem;
 }
 
 header nav ul li a {
-    color: var(--texto-principal);
-    font-weight: 600;
+  color: var(--texto-escuro);
+  font-weight: 600;
+  text-decoration: none;
 }
 
 header nav ul li a.ativo {
-    color: #4988C4;
-    font-weight: 800;
+  color: var(--azul-medio);
+  font-weight: 800;
+}
 
+.header-icones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
 }
 
 .sino img {
-    width: 10%;
+  width: 24px;
+  height: auto;
 }
 
 .avatar img {
-    width: 10%;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  display: block;
 }
 
 
@@ -275,97 +299,51 @@ header nav ul li a.ativo {
 .btn-enviar:active {
     background-color: #3d7ab3;
 }
-
-
-@media screen and (max-width: 599px) {
-
-    footer {
-        background-color: #1c4d8d;
-        color: #ffffff;
-    }
-
-
-    .footer-container {
-        max-width: 900px;
-        margin: 0 auto;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 8vw 0 0 0;
-        gap: 1.5rem;
-        text-align: center;
-    }
-
-
-    /* LOGO */
-
-    .footer-logo {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .logo-circle-fim {
-        width: 30%;
-        height: auto;
-    }
-
-
-    /* LINKS */
-
-    .footer-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        gap: 0.8rem;
-    }
-
-    .footer-links a {
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 0.85rem;
-    }
-
-
-    /* TEXTOS */
-
-    .footer-copy {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        gap: 0.5rem;
-    }
-
-    .footer-copy p {
-        margin: 0;
-        font-size: 0.75rem;
-        opacity: 0.8;
-        font-weight: 700;
-        text-align: center;
-    }
-
-
-    /* REDES SOCIAIS */
-
-    .footer-redes {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        gap: 1rem;
-    }
-
-    .footer-redes img {
-        width: 25px;
-        height: 25px;
-    }
-
-}
-
+ footer {
+    background-color: var(--azul-principal);
+    color: #ffffff;
+    padding: 2rem 5%;
+    margin-top: 3.5rem;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .footer-container .logo-circle img {
+    width: 120px;
+    height: auto;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+  
+  .footer-copy p {
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+  
+  .footer-redes {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
 
 /* =========================================================
    DESKTOP
@@ -645,6 +623,7 @@ header nav ul li a.ativo {
   width: 120px;
   height: auto;
   border-radius: 0%;
+
 }
 
 .footer-container .logo-circle img {
