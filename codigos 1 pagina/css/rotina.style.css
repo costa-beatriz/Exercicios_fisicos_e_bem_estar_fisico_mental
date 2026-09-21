@@ -22,8 +22,6 @@ body {
 
 /*ESTILOS BASE: MOBILE FIRST (< 600px)*/
 
-/*REVER*/
-
 header {
   padding: 1.5rem 5%;
   border-bottom: 1px solid #cccccc;
@@ -70,8 +68,6 @@ header nav ul li a.ativo {
   justify-content: center;
   gap: 1.2rem;
 }
-
-/*REVER*/
 
 .sino img {
   width: 24px;
@@ -422,20 +418,23 @@ footer {
 
   header {
     display: flex;
+    flex-direction: row; /* Força a voltar para linha no PC */
     align-items: center;
     justify-content: space-between;
-    padding: 3vw 5vw 3vw 5vw;
+    padding: 3vw 5vw;
     border-bottom: 1px solid #cccccc;
+    text-align: left; /* Corrige o text-align center do celular */
   }
 
   header div.logo-circle img {
     width: 3.5rem;
     border-radius: 50%;
-
+    margin: 0; /* Remove o margin auto do celular */
   }
 
   header nav ul {
     display: flex;
+    flex-direction: row; /* Força o menu a ficar horizontal no PC */
     gap: 2vw;
     font-size: 0.9rem;
   }
@@ -454,6 +453,19 @@ footer {
     display: flex;
     align-items: center;
     gap: 1rem;
+  }
+
+  .sino img {
+    width: 27px;
+    height: auto;
+  }
+
+  .header-icones .avatar {
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    display: inline-block;
   }
 
   .sino img {
