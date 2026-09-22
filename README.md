@@ -511,3 +511,31 @@ Correção do envio do formulário de Contate-nos (Supabase) e implementação d
 O formulário de Contate-nos está funcionando corretamente e salvando as mensagens na tabela `contatos_db`. A recuperação de senha também foi testada com sucesso. Pendências que seguem em aberto: replicar os ajustes de header, avatar e menu nas demais páginas do site; decidir sobre a criação de uma página de Política de Privacidade; revisar o sistema de metas da página Progresso. tudo isso foi feito com a ideias minha, porem com o auxilio da ia "claude" mostrando e ensinando como fazia cada passo do codigo.
 
 **Fora da sala**
+
+# Atas 11 – Projeto Integrador (Professor Mehran) (Projeto em andamento, apenas fazendo mudanças no css nas páginas.)
+
+**Data:** 22/09/2026
+
+**Coordenadora:** Beatriz Gomes
+
+**Secretário e responsável pelo GitHub:** Julio César da Silva Kubiack
+
+### Assunto
+
+Todos arrumando o css de cada página ou ajudando respectivamente as outras páginas dos outros colegas.
+
+### Responsabilidades
+
+- **Julio César da Silva Kubiack:** planejamento de ideias para aprimorar a intereção do site.
+
+- **Beatriz Gomes dos Santos:** arrumando o css das páginas progresso e rotina.
+
+- **Isabela Luiza Maciel:** arrumando o css da página contate-nos.
+
+- **Melissa:** arrumando o css da página do início.
+
+- **Beatriz Costa:** arrumando o css rotina progresso e perfil.
+
+- **Vinicios Korman** arrumando o footer e o header na página do contate-nos.
+
+---
