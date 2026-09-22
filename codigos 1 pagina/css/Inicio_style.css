@@ -19,18 +19,13 @@ html {
 
 html {
     font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
-    font-family:
-        "Mulish",
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        sans-serif;
+    font-family: "Mulish", system-ui, -apple-system, sans-serif;
     color: #252b42;
     text-align: center;
 }
 
 h1 {
-    font-family: "Nunito", sans-serif;
+    font-family: "Mulish", system-ui, -apple-system, sans-serif;
 }
 
 h2,
@@ -38,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Oswald", sans-serif;
+    font-family: "Mulish", system-ui, -apple-system, sans-serif;
 
 }
 
