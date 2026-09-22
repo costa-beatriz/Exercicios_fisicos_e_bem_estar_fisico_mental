@@ -5,12 +5,7 @@
 
 html {
     font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
-    font-family:
-        "Mulish",
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        sans-serif;
+    font-family: "Mulish", system-ui, -apple-system, sans-serif;
     color: #252b42;
     text-align: center;
 }
