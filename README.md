@@ -486,7 +486,7 @@ pie title Andamento do projeto
     "Ideias e melhorias" : 5
 ```
 ``` 
-O projeto está aproximadamente 70% concluído. Ainda existem algumas partes em desenvolvimento e algumas ideias que podem ser adicionadas futuramente.
+O projeto está aproximadamente 80% concluído. Ainda existem algumas partes em desenvolvimento e algumas ideias que podem ser adicionadas futuramente.
 ```
 # Ata 13.2 – Projeto Integrador (Professor Mehran)
 
