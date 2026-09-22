@@ -20,7 +20,7 @@ body {
 }
 
 :root {
-    --azul: #4a90d9;
+    --azul-principal: #1c4d8d;
     --azul-escuro: #17436f;
     --azul-claro: #eaf3fb;
     --azul-footer: #5b93c5;
@@ -259,7 +259,7 @@ header nav ul li a.ativo {
 }
 
  footer {
-  background-color: var();
+  background-color: var(--azul-principal);
   color: #ffffff;
   padding: 2rem 5%;
   margin-top: 3.5rem;
